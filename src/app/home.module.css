@@ -28,8 +28,9 @@
     top: 200px;
 }
 .home__logo{
+    width: 50vw;
     position: absolute;
-    top: 40px;
+    top: 85px;
     left: 100px;
     z-index: 1;
 }
@@ -68,7 +69,29 @@
 }
 
 .home__image-in-dev{
+    width: 50vw;
+    /* width: 50%; */
     height: auto;      /* Maintains aspect ratio */
     max-width: 100%;   /* Prevents upscale beyond container size */
     object-fit: contain; /* Scales up while keeping proportions */
+}
+
+@media (min-width: 768px) {
+    .home__title{
+        font-size: 40px;
+    }
+    .home__logo{
+        top: 20px;
+        left: 50px;
+        width: 200px;
+        height: auto;
+    }
+    .home__content{
+        top: 150px;
+    }
+
+    .home__image-in-dev{
+        width: 100%;
+        height: auto;
+    }
 }
