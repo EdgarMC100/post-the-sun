@@ -1,0 +1,74 @@
+.home__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-image: url('/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.home__header{
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.home__content{
+    position: relative;
+    width: max-content;
+    height: 500px;
+    display: flex;
+    top: 200px;
+}
+.home__logo{
+    position: absolute;
+    top: 40px;
+    left: 100px;
+    z-index: 1;
+}
+
+.home__title{
+    position: relative;
+    font-size: 60px;
+    display: inline-block;
+    z-index: 2;
+}
+
+.home__footer{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #F6B515;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home__footer-text{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    line-height: normal;
+    /* position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #000000; */
+}
+
+.home__image-in-dev{
+    height: auto;      /* Maintains aspect ratio */
+    max-width: 100%;   /* Prevents upscale beyond container size */
+    object-fit: contain; /* Scales up while keeping proportions */
+}
